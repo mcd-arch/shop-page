@@ -1,0 +1,8 @@
+/*main_content_styles*/
+.main_box {
+  display: flex;
+}
+
+.title_bar {
+  display: flex;
+}
