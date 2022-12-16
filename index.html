@@ -30,7 +30,7 @@
                 <!--navigation_box-->
                 <div class="col_6">
                     <ul class="menu">
-                        <li><a href="">Home 111</a></li>
+                        <li><a href="">Home</a></li>
                         <li class="dropdown_btn"><a href="">Products&#8595;</a>
                             <ul class="dropdown">
                                 <li><a href="" id="sub_li">Lorem ipsum dolor</a></li>
@@ -63,37 +63,124 @@
     <!--main_content-->
     <main>
         <!--slider-->
-        <section>slider</section>
+        <section class="slider_box">slider</section>
         <!--main_content-->
-        <section class="main_box">
-            <!--aside-->
-            <aside class="col_3">aside</aside>
-            <article class="col_9">
-                <!--main_content_title_bar-->
-                <div class="title_bar">
+        <div class="bg">
+            <section class="main_box">
+                <!--aside-->
+                <aside class="col_3">
+                    <div class="aside">
+                        <form action="#" class="aside_form">
+                            <h3>DEVICE TYPE</h3>
+                            <ul class="choose_box">
+                                <li><input type="checkbox" name="device_type_laptop" id="choose_tick"> Laptop</li>
+                                <li><input type="checkbox" name="device_type_tablet" id=""> Tablet</li>
+                            </ul>
+                            <h3>COLOR</h3>
+                            <ul class="choose_box">
+                                <li><input type="checkbox" name="color_black" id=""> Black</li>
+                                <li><input type="checkbox" name="color_red" id=""> Red</li>
+                                <li><input type="checkbox" name="color_green" id=""> Green</li>
+                                <li><input type="checkbox" name="color_blue" id=""> Blue</li>
+                                <li><input type="checkbox" name="color_orange" id=""> Orange</li>
+                            </ul>
+                            <h3>RAM</h3>
+                            <ul class="choose_box">
+                                <li><input type="checkbox" name="ram_1" id=""> 1GB</li>
+                                <li><input type="checkbox" name="ram_2" id=""> 2GB</li>
+                                <li><input type="checkbox" name="ram_4" id=""> 4GB</li>
+                                <li><input type="checkbox" name="ram_6" id=""> 6GB</li>
+                                <li><input type="checkbox" name="ram_8" id=""> 8GB</li>
+                            </ul>
+                            <h4><a href="#" class="options_link">Show more options ...</a></h4>
+                            <button class="submit_btn">SUBMIT</button>
+                        </form>  
+                    </div>       
+                </aside>
+                <article class="col_9">
+                     <!--main_content_title_bar-->
                     <div class="way">
-                        <a href="#">Home page</a>>
-                        <a href="#">Products</a>>
+                        <a href="#">Home page</a><span> ></span>
+                        <a href="#">Products</a><span> ></span>
                         <a href="#">Laptops and Tablets</a>
                     </div>
-                    <div class="sort_box">
-                        <h2 class="col_8">Laptops and Tablets</h2>
-                        <ul class="col_4">
-                            <li><a>sort by price</a>
-                                <ul>
-                                    <li><a>sort by name</a></li>
-                                    <li><a>sort by date</a></li>
-                                    <li><a>sort by popularity</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="title_bar">
+                        <h2 class="col_8 title">Laptops and Tablets</h2>
+                        <div class="col_4">
+                            <ul class="sort_drop">
+                                <li class="dropdown_btn"><a id="sub_li">sort by price</a>
+                                    <ul class="dropdown_sort">
+                                        <li><a id="sub_li">sort by name</a></li>
+                                        <li><a id="sub_li">sort by date</a></li>
+                                        <li><a id="sub_li">sort by popularity</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <!--shop_boxes-->
-                <div></div>
-            </article>
-
-        </section>
+                    <!--shop_boxes-->
+                    <div class="cart_container">
+                        <div class="col_4">
+                            <div class="bg_dark">
+                                <div class="box_img">
+                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
+                                    <a href="#"><div class="square_img"></div></a>
+                                    <a href="#"><div class="heart_img"></div></a>
+                                </div>
+                                <div class="cart_list">
+                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
+                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
+                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
+                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
+                                    <div class="cart_descr"><span class="price">$599</span><sup>25</sup></div>
+                                    <div class="cart_descr"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn">ADD TO CART</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="bg_dark">
+                                <div class="box_img">
+                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
+                                    <a href="#"><div class="square_img"></div></a>
+                                    <a href="#"><div class="heart_img"></div></a>
+                                </div>
+                                <div class="cart_list">
+                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
+                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
+                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
+                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
+                                    <div class="cart_descr"><span class="price">$599</span><sup>25</sup></div>
+                                    <div class="cart_descr"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn">ADD TO CART</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="bg_dark">
+                                <div class="box_img">
+                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
+                                    <a href="#"><div class="square_img"></div></a>
+                                    <a href="#"><div class="heart_img"></div></a>
+                                </div>
+                                <div class="cart_list">
+                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
+                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
+                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
+                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
+                                    <div class="cart_descr"><span class="price">$599</span><sup>25</sup></div>
+                                    <div class="cart_descr"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn">ADD TO CART</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
 
 
 
