@@ -95,9 +95,27 @@
   margin-bottom: 20px;
 }
 
-#choose_tick::selection {
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px white solid;
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: white;
+}
+
+label {
+  display: flex;
+}
+
+label::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  align-self: center;
+  margin-right: 10px;
 }
 
 .options_link {
@@ -267,4 +285,33 @@ span {
   background-image: url(img/icon1.png);
   background-repeat: no-repeat;
   background-position: right 15px top 15px;
+}
+
+.load_more_text {
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 90px;
+}
+
+sup {
+  font-size: 24px;
+}
+
+/*footer_styles*/
+
+.footer {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  padding-top: 40px;
+}
+
+.footer_text {
+  color: #2c71b8;
+  font-size: 21px;
+  font-weight: lighter;
 }
