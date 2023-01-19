@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
@@ -54,7 +56,7 @@
                     </form>
                     <div class="backet_box">
                         <div class="backet_btn"></div>
-                        <div class="counter">4</div>
+                        <div class="counter" id="qqq">0</div>
                     </div>
                 </div>
             </div>
@@ -63,7 +65,16 @@
     <!--main_content-->
     <main>
         <!--slider-->
-        <section class="slider_box">slider</section>
+        <section class="slider_box">
+            <div>
+                <div class="slider">
+                    <div><img src="img/2382261825.jpg" alt="pic"></div>
+                    <div><img src="img/ebookreaders-2048px-5334.jpg" alt="pic"></div>
+                    <div><img src="img/01WOu4NbEnv3pJ54qp7j50k-16..v1647874749.jpg" alt="pic"></div>
+                    <div><img src="img/1200px-LG_L194WT-SF_LCD_monitor.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
         <!--main_content-->
         <div class="bg">
             <section class="main_box">
@@ -160,8 +171,8 @@
                             <div class="bg_dark">
                                 <div class="box_img">
                                     <img src="img/icon (17).png" alt="icon" class="cart_img">
-                                    <a href="#"><div class="square_img"></div></a>
-                                    <a href="#"><div class="heart_img"></div></a>
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
                                 </div>
                                 <div class="cart_list">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
@@ -170,8 +181,8 @@
                                     <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
                                     <div class="cart_title"><span>RAM:</span> 1GB</div>
                                     <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
-                                    <div class="cart_descr"><a><button class="details_btn">MORE DETAILS</button></a></div>
-                                    <div class="cart_descr"><a></a><button class="add_btn">ADD TO CART .</button></a></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
                                 </div>
                             </div>
                         </div>
@@ -179,8 +190,8 @@
                             <div class="bg_dark">
                                 <div class="box_img">
                                     <img src="img/icon (17).png" alt="icon" class="cart_img">
-                                    <a href="#"><div class="square_img"></div></a>
-                                    <a href="#"><div class="heart_img"></div></a>
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
                                 </div>
                                 <div class="cart_list">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
@@ -189,8 +200,8 @@
                                     <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
                                     <div class="cart_title"><span>RAM:</span> 1GB</div>
                                     <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
-                                    <div class="cart_descr"><a><button class="details_btn">MORE DETAILS</button></a></div>
-                                    <div class="cart_descr"><a></a><button class="add_btn">ADD TO CART .</button></a></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
                                 </div>
                             </div>
                         </div>
@@ -198,8 +209,8 @@
                             <div class="bg_dark">
                                 <div class="box_img">
                                     <img src="img/icon (17).png" alt="icon" class="cart_img">
-                                    <a href="#"><div class="square_img"></div></a>
-                                    <a href="#"><div class="heart_img"></div></a>
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
                                 </div>
                                 <div class="cart_list">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
@@ -208,8 +219,8 @@
                                     <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
                                     <div class="cart_title"><span>RAM:</span> 1GB</div>
                                     <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
-                                    <div class="cart_descr"><a><button class="details_btn">MORE DETAILS</button></a></div>
-                                    <div class="cart_descr"><a></a><button class="add_btn">ADD TO CART .</button></a></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
                                 </div>
                             </div>
                         </div>
@@ -217,8 +228,8 @@
                             <div class="bg_dark">
                                 <div class="box_img">
                                     <img src="img/icon (17).png" alt="icon" class="cart_img">
-                                    <a href="#"><div class="square_img"></div></a>
-                                    <a href="#"><div class="heart_img"></div></a>
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
                                 </div>
                                 <div class="cart_list">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
@@ -227,8 +238,8 @@
                                     <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
                                     <div class="cart_title"><span>RAM:</span> 1GB</div>
                                     <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
-                                    <div class="cart_descr"><a><button class="details_btn">MORE DETAILS</button></a></div>
-                                    <div class="cart_descr"><a></a><button class="add_btn">ADD TO CART .</button></a></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
                                 </div>
                             </div>
                         </div>
@@ -236,8 +247,8 @@
                             <div class="bg_dark">
                                 <div class="box_img">
                                     <img src="img/icon (17).png" alt="icon" class="cart_img">
-                                    <a href="#"><div class="square_img"></div></a>
-                                    <a href="#"><div class="heart_img"></div></a>
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
                                 </div>
                                 <div class="cart_list">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
@@ -246,8 +257,8 @@
                                     <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
                                     <div class="cart_title"><span>RAM:</span> 1GB</div>
                                     <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
-                                    <div class="cart_descr"><a><button class="details_btn">MORE DETAILS</button></a></div>
-                                    <div class="cart_descr"><a></a><button class="add_btn">ADD TO CART .</button></a></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
                                 </div>
                             </div>
                         </div>
@@ -255,8 +266,8 @@
                             <div class="bg_dark">
                                 <div class="box_img">
                                     <img src="img/icon (17).png" alt="icon" class="cart_img">
-                                    <a href="#"><div class="square_img"></div></a>
-                                    <a href="#"><div class="heart_img"></div></a>
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
                                 </div>
                                 <div class="cart_list">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
@@ -265,8 +276,103 @@
                                     <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
                                     <div class="cart_title"><span>RAM:</span> 1GB</div>
                                     <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
-                                    <div class="cart_descr"><a><button class="details_btn">MORE DETAILS</button></a></div>
-                                    <div class="cart_descr"><a></a><button class="add_btn">ADD TO CART .</button></a></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="bg_dark">
+                                <div class="box_img">
+                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
+                                </div>
+                                <div class="cart_list">
+                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
+                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
+                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
+                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
+                                    <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="bg_dark">
+                                <div class="box_img">
+                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
+                                </div>
+                                <div class="cart_list">
+                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
+                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
+                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
+                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
+                                    <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="bg_dark">
+                                <div class="box_img">
+                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
+                                </div>
+                                <div class="cart_list">
+                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
+                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
+                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
+                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
+                                    <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="bg_dark">
+                                <div class="box_img">
+                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
+                                </div>
+                                <div class="cart_list">
+                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
+                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
+                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
+                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
+                                    <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="bg_dark">
+                                <div class="box_img">
+                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
+                                </div>
+                                <div class="cart_list">
+                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
+                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
+                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
+                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
+                                    <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
                                 </div>
                             </div>
                         </div>
@@ -280,5 +386,30 @@
     <footer class="footer">
         <span class="footer_text">Ⓒ Copyright 2017</span>
     </footer>
+
+    <!--modal_window-->
+
+    <div class="modal">
+        <div class="modal_block">
+            <form action="">
+                <div class="btn_wrap">
+                    <div class="close_btn">X</div>
+                </div>
+                <h3>Please call for more details</h3>
+                <div class="form_field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form_field">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <button>Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="app_shop.js"></script>
 </body>
 </html>
