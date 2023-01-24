@@ -68,20 +68,98 @@ $(`.slider`).slick({
     dots: true,
 });
 
-//scroll
+//scroll_wonder
 
-let scrollPosition = window.scrollY;
-let scrollMax = Math.max(
-    document.body.scrollHeight, document.documentElement.scrollHeight,
-    document.body.offsetHeight, document.documentElement.offsetHeight,
-    document.body.clientHeight, document.documentElement.clientHeight
-  );
+/*let scrollPosition = window.scrollY;
+let scrollMax = document.body.scrollHeight;
 
 console.log (scrollPosition);
 console.log (scrollMax);
 
-console.log(+scrollPosition > (+scrollMax*0.5));
+window.addEventListener(`scroll`, function scrollModal() {
+    if (window.scrollY === 1500) {openModal};
+    window.removeEventListener(`scroll`, scrollModal);
+});*/
 
-document.addEventListener(`scroll`, function() {
-    if (scrollPosition > (scrollMax*0.5)) {openModal()} else {closeModal()};
-});
+/*setInterval(openModal, 3000);*/
+
+function showModalByScroll() { 
+    if (window.scrollY >= document.documentElement.scrollHeight/2) { 
+      openModal(); 
+      window.removeEventListener("scroll", showModalByScroll); 
+    } 
+  } 
+   
+window.addEventListener("scroll", showModalByScroll);
+
+AOS.init();
+
+//construct_function
+
+/*class Car {
+    constructor(model, color, year) {
+        this.model = model;
+        this.color = color;
+        this.year = year;
+    }
+
+    hi = function() {
+        console.log(`Hi ` + this.model);
+    };
+
+    hello = function() {
+        console.log(`Hello ` + this.model + ` ` + this.color);
+    };
+};
+
+let audi = new Car(`A4`, `black`, 2020);
+let bmw = new Car(`328`, `grey`, 2010);
+let lexus = new Car(`es250`, `white`, 2012);
+
+console.log(audi);
+console.log(bmw);
+console.log(lexus);
+
+audi.hi();
+bmw.hi();
+lexus.hi();
+
+lexus.hello();*/
+
+const decrementBtns = document.querySelectorAll(`.decrement_btn`)[0];
+const incrementBtns = document.querySelectorAll(`.increment_btn`)[0];
+const productsCount = document.querySelectorAll(`.product_quantity input`)[0];
+
+function Counter(decrementBtn, incrementBtn, inputField) {
+    this.domRefs = {
+        incrementBtn,
+        decrementBtn,
+        inputField,
+    };
+
+    this.toggleButtonState = function() {
+        let count = +this.domRefs.inputField.value;
+        this.domRefs.decrementBtn.disabled = count<=1;
+        this.domRefs.incrementBtn.disabled = count>=10;
+    };
+
+    this.toggleButtonState();
+
+    this.increment = function() {
+        this.domRefs.inputField.value = +this.domRefs.inputField.value+1;
+        this.toggleButtonState();
+    };
+
+    this.decrement = function() {
+        this.domRefs.inputField.value = +this.domRefs.inputField.value-1;
+        this.toggleButtonState();
+    };
+
+    this.domRefs.incrementBtn.addEventListener(`click`, this.increment.bind(this));
+
+    this.domRefs.decrementBtn.addEventListener(`click`, this.decrement.bind(this));
+  
+};
+
+let counter1 = new Counter(decrementBtns, incrementBtns, productsCount);
+console.log(counter1);

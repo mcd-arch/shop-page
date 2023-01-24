@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Shop</title>
 </head>
 
@@ -174,7 +175,31 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
+                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
+                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
+                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
+                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
+                                    <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
+                                    <div class="product_quantity">
+                                        <button class="decrement_btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment_btn">+</button>
+                                    </div>
+                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
+                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="bg_dark">
+                                <div class="box_img">
+                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
+                                    <a href="#q"><div class="square_img"></div></a>
+                                    <a href="#q"><div class="heart_img"></div></a>
+                                </div>
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -193,7 +218,7 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -212,7 +237,7 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -231,7 +256,7 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -250,7 +275,7 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -269,7 +294,7 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -288,7 +313,7 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -307,7 +332,7 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -326,7 +351,7 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -345,26 +370,7 @@
                                     <a href="#q"><div class="square_img"></div></a>
                                     <a href="#q"><div class="heart_img"></div></a>
                                 </div>
-                                <div class="cart_list">
-                                    <div class="cart_title"><h4>#1 Device Name</h4></div>
-                                    <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                                    <div class="cart_title"><span>TYPE:</span> Laptop</div>
-                                    <div class="cart_title"><span>SCREEN SIZE:</span> 7 inches</div>
-                                    <div class="cart_title"><span>RAM:</span> 1GB</div>
-                                    <div class="cart_descr"><span class="price">$599<sup>25</sup></span></div>
-                                    <div class="cart_descr details"><a><button class="details_btn">MORE DETAILS</button></a></div>
-                                    <div class="cart_descr"><a></a><button class="add_btn" onclick="onClick()">ADD TO CART .</button></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col_4">
-                            <div class="bg_dark">
-                                <div class="box_img">
-                                    <img src="img/icon (17).png" alt="icon" class="cart_img">
-                                    <a href="#q"><div class="square_img"></div></a>
-                                    <a href="#q"><div class="heart_img"></div></a>
-                                </div>
-                                <div class="cart_list">
+                                <div class="cart_list" data-aos="zoom-out">
                                     <div class="cart_title"><h4>#1 Device Name</h4></div>
                                     <div class="cart_descr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                                     <div class="cart_title"><span>TYPE:</span> Laptop</div>
@@ -407,6 +413,7 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>

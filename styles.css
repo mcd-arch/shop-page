@@ -227,3 +227,14 @@ header {
   justify-content: flex-start;
   padding-left: 28px;
 }
+
+/*bying_styles*/
+
+.product_quantity {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product_quantity input {
+  width: 100px;
+}
