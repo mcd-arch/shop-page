@@ -126,9 +126,11 @@ lexus.hi();
 
 lexus.hello();*/
 
-const decrementBtns = document.querySelectorAll(`.decrement_btn`)[0];
-const incrementBtns = document.querySelectorAll(`.increment_btn`)[0];
-const productsCount = document.querySelectorAll(`.product_quantity input`)[0];
+//products counter
+
+const decrementBtns = document.querySelectorAll(`.decrement_btn`);
+const incrementBtns = document.querySelectorAll(`.increment_btn`);
+const productsCount = document.querySelectorAll(`.product_quantity input`);
 
 function Counter(decrementBtn, incrementBtn, inputField) {
     this.domRefs = {
@@ -161,5 +163,54 @@ function Counter(decrementBtn, incrementBtn, inputField) {
   
 };
 
-let counter1 = new Counter(decrementBtns, incrementBtns, productsCount);
-console.log(counter1);
+//let counter1 = new Counter(decrementBtns, incrementBtns, productsCount);
+let counters = [];
+
+productsCount.forEach (
+    (element, i) => (counters[i] = new Counter (decrementBtns[i], incrementBtns[i], element))
+);
+
+//weather_widget
+
+let city = prompt(`Your city?`);
+
+let userCity = document.querySelector(`.city`);
+userCity.innerHTML = `City: ` + city;
+
+fetch(`http://api.openweathermap.org/data/2.5/weather?q=KYIV&units=metric&APPID=5d066958a60d315387d9492393935c19 `)
+    .then((qqq) => qqq.json())
+    .then((data) => {
+
+        console.log(data);
+
+        let tempValue = data.main.temp;
+        let userTemp = document.querySelector(`.temp`);
+        userTemp.innerHTML = `Temperature: ` + tempValue + ' deg';
+
+        let pressureValue = data.main.pressure;
+        let userPressure = document.querySelector(`.pressure`);
+        userPressure.innerHTML = `Pressure: ` + pressureValue + ` mmh`;
+
+        let descriptionValue = data.weather[0].description;
+        let userDescription = document.querySelector(`.description`);
+        userDescription.innerHTML = `Sky: ` + descriptionValue;
+
+        let humidiyValue = data.main.humidity;
+        let userHumidity = document.querySelector(`.humidity`);
+        userHumidity.innerHTML = `Humidity: ` + humidiyValue + `%`;
+
+        let speedValue = data.wind.speed;
+        let userSpeed = document.querySelector(`.speed`);
+        userSpeed.innerHTML = `Wind speed: ` + speedValue + ` m/s`;
+
+        let degValue = data.wind.deg;
+        let userDeg = document.querySelector(`.deg`);
+        userDeg.innerHTML = `Wind direction: ` + degValue + ' deg';
+
+        //let iconValue = data.weather[0].icon;
+        //let iconUrl = 
+        //let userIcon = document.querySelector(`.icon`);
+        //userIcon.innerHTML = degValue;
+    });
+
+
